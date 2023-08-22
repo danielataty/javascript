@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País </title>
+</head>
+<body>
+
+    <h1>Estrangeiro ou Angolano?</h1>
+
+    Nasci: <input type="text" id="text">
+    <input type="button" value="validar" onclick="Validar()">
+    <div id="res"></div>
+
+    <script>
+        function Validar(){
+        var pais = window.document.getElementById('text')
+        
+        var res = window.document.getElementById('res')
+
+        if(pais == 'Angola' ){
+            res.innerHTML = 'Voçê é <strong>ANGOLANO!</strong>'
+        }else{
+            res.innerHTML = 'Voçê é <strong>ESTRANGEIRO</strong>'
+        }
+        }
+
+    </script>
+    
+</body>
+</html>

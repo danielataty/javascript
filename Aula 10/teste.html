@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+    <input type="number" name="inpu1" id="input1">
+    <input type="number" name="input2" id="input2">
+    <input type="button" value="Calcular" id="Calcular" >
+    <div id="ressoma">
+        =
+    </div>
+      <div id="ressub">
+        =
+    </div>
+    
+
+    <script>
+        var a = window.document.getElementById('Calcular')
+        a.addEventListener('click', calcular)
+
+        function calcular(){
+        var in1 = window.document.getElementById('input1')
+        var in2 = window.document.getElementById('input2')
+        var resoma = window.document.getElementById('ressoma')
+        var ressub = window.document.getElementById('ressub')
+
+        var n1 = Number(in1.value)
+        var n2 = Number(in2.value)
+
+        var s =  n1 + n2
+        var r = n1 - n2
+
+        ressoma.innerHTML = `A soma entre ${n1} e ${n2} é igual a </strong>${s}`
+        ressub.innerHTML = `A subtração entre ${n1} e ${n2} é igual a </strong>${r}`
+
+        }
+       
+
+    </script>
+</body>
+</html>
