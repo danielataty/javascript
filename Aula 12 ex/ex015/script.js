@@ -16,8 +16,8 @@ function verificar(){
         var idade = ano - Number(fano.value)
         var genero = ''
         var img = document.createElement('img')
-        img.setAttribute('id', 'foto') // criamos uma tag, com id 
-        if(fsex[0].checked){
+        img.setAttribute('id', 'foto') // criamos uma tag img, com id foto 
+        if(fsex[0].checked){ // o checked é para que o programa inicie marcando uma das opções
 
             genero = 'Homem'
 
