@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Modelo de Exercíco </title>
+    <title>Super cobtador </title>
 </head>
 <body>
 
     <header>
-        <h1>Título</h1>
+        <h1>Vamos contar!</h1>
     </header>
 
     <section>
         <div>
+            <p>
+                <label for="ini">Ínicio</label>
+                <input type="number" name="inicio" id="ini">
+                
+            </p>
+            <p>
+                <label for="fim">Fim</label>
+                <input type="number" name="fim" id="fim">
+            </p>
+
+            <p>
+                <label for="passo">passo</label>
+                <input type="number" name="passo" id="passo">
+            </p>
+
+            <p>
+                <input type="button" value="Contar" id="contar" onclick="contar()">
+            </p>
 
         </div>
 
-        <div>
-
+        <div id="res">
+            Processando a contagem...
         </div>
 
     </section>

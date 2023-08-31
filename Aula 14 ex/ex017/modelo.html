@@ -9,16 +9,22 @@
 <body>
 
     <header>
-        <h1>Título</h1>
+        <h1>Tabuda</h1>
     </header>
 
     <section>
         <div>
-
+            <label for="txtn">Número:</label>
+            <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuda" onclick="calcular()">
         </div>
 
-        <div>
-
+        <div id="res">
+            <p>
+                <select name="tabuada" id="seltab" size="10">
+                    <option >Digite um número acima</option>
+                </select>
+            </p>
         </div>
 
     </section>
